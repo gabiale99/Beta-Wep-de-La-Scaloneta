@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+header {
+    background-color: #1ca4d5;
+    display: flex;
+    align-items: center;
+       .logo {
+        display: flex;
+        width: 5rem;
+       }
+       nav{
+        max-width: 900px;
+        .menu-horizontal{
+            display: flex; 
+            li {
+                list-style: none;
+                margin-left: 2rem;
+                padding: 10px 20px;
+                a {
+                    padding: 15px 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 1.7rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: #fff;
+                    &:hover {
+                        color: #8ed8f5;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .menu-horizontal {
+            li {
+                &:hover {
+                    padding: 10px 20px;
+                    background-color: #fff;
+                    border-radius: 10px;
+               }
+            }
+        }
+        .menu-vertical {
+            position: absolute;
+            display: none;
+            list-style: none;
+            width: 200px;
+            background-color: rgba(0, 0, 0, .5);
+        }
+        .menu-horizontal li:hover .menu-vertical {
+            display: block;
+        }
+        .menu-vertical li:hover {
+            background-color: #b5b7c4;
+        }
+        .menu-vertical {
+           li {
+                a {
+                    color: black;
+                    padding: 15px 15px 15px 20px;
+                    text-decoration: none;
+                }
+           }
+        }
+       }
+}
+
+main {
+    .section1 {
+        display: flex;
+        padding: 15px 0px;
+            .img-principal {
+                width: 25rem;
+            }
+            .titulo-section1{
+                font-size: 2.8rem;
+            }
+    }
+    .section2 {
+        padding: 15px;
+        margin: 15px;
+        border-radius: 10px;
+        background-color: #1ca4d5;
+        .mundial2022 {
+            font-size: 3rem;
+            padding-bottom: 15px;
+            color: #fff;
+        }
+        .img-mundial {
+            width: 90%;
+        }
+        .mundial-parrafo {
+            font-size: 2rem;
+            padding-bottom: 15px;
+            color: #fff;
+        }
+        .leer-mas {
+            text-decoration: none;
+            font-size: 1.5rem;
+            background-color: #1ca4d5;
+            padding: 10px;
+            border-radius: 10px;
+            color: #fff;
+            &:hover {
+                background-color: #fff;
+                color: #1ca4d5;
+            }
+        }
+    }
+}
